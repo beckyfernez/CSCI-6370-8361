@@ -13,24 +13,33 @@ Original file is located at
 Install and Import
 """
 
-!pip install -U aeon
+#pip install -U aeon
 
-from aeon.datasets import load_from_ts_file
+#from aeon.datasets import load_from_ts_file
 import matplotlib.pyplot as plt
 import numpy as np
 
 """Access Datasets"""
 
-from google.colab import files
-uploaded1 = files.upload()  # Opens a file upload dialog box
+#from google.colab import files
+#uploaded1 = files.upload()  # Opens a file upload dialog box
 
-uploaded2 = files.upload()
+#uploaded2 = files.upload()
 
-file_path1 = "/content//KeplerLightCurves_TRAIN.ts"
+# Load train and test datasets
+
+file_path1 = r"C:\Users\Rebecca Fernandez\Documents\Project_Files\KeplerLightCurves_TRAIN.ts"
 kepler_TRAIN = load_from_ts_file(file_path1)
 
-file_path2 = "/content//KeplerLightCurves_TEST.ts"
+file_path2 = r"C:\Users\Rebecca Fernandez\Documents\Project_Files\KeplerLightCurves_TEST.ts"
 kepler_TEST = load_from_ts_file(file_path2)
+
+
+#file_path1 = "/content//KeplerLightCurves_TRAIN.ts"
+#kepler_TRAIN = load_from_ts_file(file_path1)
+
+#file_path2 = "/content//KeplerLightCurves_TEST.ts"
+#kepler_TEST = load_from_ts_file(file_path2)
 
 """Verify the Data"""
 

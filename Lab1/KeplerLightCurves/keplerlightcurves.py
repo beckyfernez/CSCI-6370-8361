@@ -28,18 +28,11 @@ import numpy as np
 
 # Load train and test datasets
 
-file_path1 = r"C:\Users\Rebecca Fernandez\Documents\Project_Files\KeplerLightCurves_TRAIN.ts"
+file_path1 = "/content//KeplerLightCurves_TRAIN.ts"
 kepler_TRAIN = load_from_ts_file(file_path1)
 
-file_path2 = r"C:\Users\Rebecca Fernandez\Documents\Project_Files\KeplerLightCurves_TEST.ts"
+file_path2 = "/content//KeplerLightCurves_TEST.ts"
 kepler_TEST = load_from_ts_file(file_path2)
-
-
-#file_path1 = "/content//KeplerLightCurves_TRAIN.ts"
-#kepler_TRAIN = load_from_ts_file(file_path1)
-
-#file_path2 = "/content//KeplerLightCurves_TEST.ts"
-#kepler_TEST = load_from_ts_file(file_path2)
 
 """Verify the Data"""
 
